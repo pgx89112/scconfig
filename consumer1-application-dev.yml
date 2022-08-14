@@ -1,5 +1,5 @@
 server:
-  port: 7201
+  port: 7213
 spring:
   application:
     name: consumerservice
@@ -24,7 +24,7 @@ eureka:
     lease-renewal-interval-in-seconds: 30
 
 
-
+flag: dev-hk
 
 
 feign:

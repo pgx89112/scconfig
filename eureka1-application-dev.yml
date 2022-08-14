@@ -1,0 +1,27 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: eureka
+#  security:
+#    user:
+#      name: itzhiya
+#      password: itzhiya
+eureka:
+  instance:
+    hostname: eureka7001.com
+  client:
+    #是否注册到注册中心
+    register-with-eureka: false
+    #是否检索服务
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
+  server:
+    #是否自我保护，false是不开启自我保护
+    enable-self-preservation: false
+    #心跳时间，默认60000毫秒
+    eviction-interval-timer-in-ms: 90000
+
+
+flag: dev
